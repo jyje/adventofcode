@@ -14,3 +14,9 @@ def test_example_2():
     expected = 9
     data = get_data(file_path)
     assert solution_2(data) == expected
+
+def test_input_2():
+    file_path = Path(__file__).parent/"input.txt"
+    expected = 1939
+    data = get_data(file_path)
+    assert solution_2(data) == expected
