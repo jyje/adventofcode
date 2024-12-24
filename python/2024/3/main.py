@@ -3,7 +3,7 @@ import sys, re
 def get_data(file_path: str) -> list:
     with open(file_path, "r") as file:
         return file.read()
-# 
+
 
 def solution_1(data: str) -> int:
     """
