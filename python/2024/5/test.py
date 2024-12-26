@@ -22,6 +22,6 @@ def test_sample_2():
 
 def test_input_2():
     file_path = Path(__file__).parent/"input.txt"
-    expected = 0
+    expected = 4828
     rules, pages = get_data(file_path)
     assert solution_2(rules, pages) == expected
