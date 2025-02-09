@@ -1,10 +1,16 @@
 name: pytest
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/pytest.yaml"
+      - "python/**"
 
 jobs:
   test:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-24.04-arm
     steps:
       -
         name: Checkout
